@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 20px auto;
+        }
+        #gameCanvas {
+            display: none;
+        }
+        .screen {
+            display: none;
+        }
+        .screen.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="startScreen" class="screen active">
+            <h1>Cat Game</h1>
+            <p>Sobreviva por um minuto, pegando os itens e desviando dos cachorros.</p>
+            <p class="controle">Controles: 
+                <ul>
+                    <li>Setas da direita e esquerda para se movimentar (ou A e D)</li>
+                    <li>Seta para cima para pular (ou W)</li>
+                </ul>
+            </p>
+            <div class="container">
+                <div class="item">
+                    <img src="images/milk.png" width="50" height="50">
+                    <p>Leite: +50 Pontos</p>
+                </div>
+                <div class="item">
+                    <img src="images/catfood.png" width="50" height="50">
+                    <p>Cat Food: +50 Pontos</p>
+                </div>
+                <div class="itemp">
+                    <img src="images/poison.png" width="50" height="50">
+                    <p>Poison: -1 Vida</p>
+                </div>
+                <div class="itemp">
+                    <img src="images/rotten_meat.png" width="50" height="50">
+                    <p>Rotten Meat: -1 Vida</p>
+                </div>
+                <div class="itemp">
+                    <img src="images/pug.gif" width="50" height="50">
+                    <p>Dog: -1 Vida, -10 Pontos</p>
+                </div>
+            </div>
+
+            <p>Selecione o personagem:</p>
+            <div>
+                <button class="botao" onclick="selectCharacter('fast')">
+                    <img src="images/Fast.gif" width="50" height="50"><br>Rápido
+                </button>
+                <button class="botao" onclick="selectCharacter('balanced')">
+                    <img src="images/Balanced.gif" width="50" height="50"><br>Equilibrado
+                </button>
+                <button class="botao" onclick="selectCharacter('highJumper')">
+                    <img src="images/Highjumper.gif" width="50" height="50"><br>Grande Pulo
+                </button>
+            </div>
+        </div>
+
+        <div id="gameOverScreen" class="screen">
+            <h1>Game Over</h1>
+            <canvas id="gameOverCanvas" width="200" height="200"></canvas>
+            <p>Your final score: <span id="finalScore"></span></p>
+            <div>
+                <button class="botao1" onclick="location.reload()">Play Again</button>
+            </div>
+        </div>
+
+        <div id="winScreen" class="screen">
+            <h1>You Win!</h1>
+            <canvas id="winCanvas" width="200" height="200"></canvas>
+            <p>Your final score: <span id="winScore"></span></p>
+            <div>
+                <button class="botao1" onclick="proceedToNextPhase()">Next Phase</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas" width="1080" height="720"></canvas>
+
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+.screen {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.controle {
+    text-align: center;
+    font-size: 13px;
+    color: blueviolet;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item, .itemp {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+    text-align: center;
+    color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    min-width: 100px;
+}
+
+.itemp {
+    color: red;
+}
+
+.item img {
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+}
+.itemp img {
+    margin-bottom: 11px;
+    width: 50px;
+    height: 55px;
+}
+
+.screen {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+.body .p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+.botao {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 8px;
+}
+
+.botao1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+li {
+    color: blueviolet;
+}
+h1 {
+    font-size: 35px;
+}
+
+#livesContainer {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#livesContainer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
