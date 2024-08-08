@@ -12,3 +12,9 @@
 1. Abra o jogo.
 2. Clique no gatinho.
 3. Divirta-se 😺!
+
+# Aqui está imagens do meu projeto:
+
+![Exemplo de Imagem](images/catgame1.png)
+![Exemplo de Imagem](images/catgamer.png)
+![Exemplo de Imagem](images/catgamego.png)
