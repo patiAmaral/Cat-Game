@@ -13,7 +13,7 @@
 2. Clique no gatinho.
 3. Divirta-se 😺!
 
-# Aqui está imagens do meu projeto:
+# Imagens do projeto:
 
 ![Exemplo de Imagem](images/catgame1.png)
 ![Exemplo de Imagem](images/catgamer.png)
